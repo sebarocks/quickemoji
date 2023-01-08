@@ -1,7 +1,10 @@
 <script>
+    import {getEmojiUrl} from './util.js';
+
     export let emoji;
+
+    const url = getEmojiUrl(emoji.hexcode);
 </script>
 
-<div class="emoji">{emoji.unicode}</div>
-
+<img class="emoji" alt="{emoji.emoji}" src={url}>
 

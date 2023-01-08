@@ -1,22 +1,18 @@
 <script>
     import ButtonEmoji from "./ButtonEmoji.svelte";
-    import twemoji from 'twemoji';
-    import { onMount  } from 'svelte';
+    import { showGroup } from './stores.js';
 
     export let emojis;
-    
-    onMount( () => {
-        let wholeGrid = document.getElementById('emojigrid');
-        twemoji.parse(wholeGrid,  {
-            folder: 'svg',
-            ext: '.svg'
-        })
-     });
+    export let groupId;
+
 
 </script>
 
 <section id="emojigrid">
     {#each emojis as emoji}
+    {#if $showGroup==groupId}
         <ButtonEmoji emoji={emoji}></ButtonEmoji>
+    {/if}
     {/each} 
 </section>
+

@@ -1,23 +1,23 @@
 {
 
-  "description": "Add a scroll to change speed of videos",
+  "name": "QuickEmoji",
+  "description": "Add a panel to quickly copy emojis to clipboard",
   "manifest_version": 2,
-  "name": "VidSpeed",
   "version": "1.0",
-  "homepage_url": "https://github.com/sebarocks/VidSpeed",
+  "homepage_url": "https://github.com/sebarocks/QuickEmoji",
   "icons": {
-    "48": "icons/vsxd-48.png"
+    "48": "icons/qe-48.png"
   },
 
   "browser_action": {
-    "default_icon": "icons/vsxd-32.png",
+    "default_icon": "icons/qe-32.png",
     "theme_icons": [{
-        "light": "icons/vsxd-32-light.png",
-        "dark": "icons/vsxd-32.png",
+        "light": "icons/qe-32-light.png",
+        "dark": "icons/qe-32.png",
         "size": 32
     }],
     "default_title": "VidSpeed",
-    "default_popup": "popup/scroller.html"
+    "default_popup": "popup/popup.html"
   }
 
 }
