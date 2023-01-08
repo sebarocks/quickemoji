@@ -1,0 +1,18 @@
+:root {
+  font-family: Inter, sans-serif;
+  max-width: 400px;
+}
+
+main {
+  max-width: 400px;
+}
+
+.btn {
+  display: inline;
+}
+
+.emoji {
+  color: #707;
+  display: inline;
+  width: 2em;
+}

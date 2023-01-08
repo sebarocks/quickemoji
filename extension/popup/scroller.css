@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+#yesvideo {
+    display: none;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    font-size: 95%;
+}
+
+ 

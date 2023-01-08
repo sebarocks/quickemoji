@@ -1,0 +1,23 @@
+{
+
+  "description": "Add a scroll to change speed of videos",
+  "manifest_version": 2,
+  "name": "VidSpeed",
+  "version": "1.0",
+  "homepage_url": "https://github.com/sebarocks/VidSpeed",
+  "icons": {
+    "48": "icons/vsxd-48.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/vsxd-32.png",
+    "theme_icons": [{
+        "light": "icons/vsxd-32-light.png",
+        "dark": "icons/vsxd-32.png",
+        "size": 32
+    }],
+    "default_title": "VidSpeed",
+    "default_popup": "popup/scroller.html"
+  }
+
+}
