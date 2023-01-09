@@ -9,6 +9,8 @@
     "48": "icons/qe-48.png"
   },
 
+  "permissions": ["activeTab"],
+  
   "browser_action": {
     "default_icon": "icons/qe-32.png",
     "theme_icons": [{
@@ -16,8 +18,10 @@
         "dark": "icons/qe-32.png",
         "size": 32
     }],
-    "default_title": "VidSpeed",
-    "default_popup": "popup/popup.html"
+    "default_title": "QuickEmoji",
+    "default_popup": "popup/index.html"
   }
+
+  
 
 }
