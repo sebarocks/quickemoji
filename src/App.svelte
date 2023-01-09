@@ -10,17 +10,25 @@
 
 </script>
 
-<header>
-  {#each messages.groups as {message, order} }
-    <ButtonCategory groupId={order} on:click={() => showGroup.set(order)}>
-      {message}
-    </ButtonCategory>
-  {/each}
+<header id="textbox">
+
 </header>
 
+<aside id="categories">
+  {#each messages.groups as {message, order} }
+    <ButtonCategory groupId={order} groupName={message} on:click={() => showGroup.set(order)}/>
+  {/each}
+</aside>
+
 <main id="wholeGrid">
-  {#each messages.groups as {order} }
-    <EmojisGrid groupId={order} emojis={filterGroup(emojis,order)}/>
+  {#each messages.groups as group }
+    {#if group.order == $showGroup}
+
+    <h2 class="group-title">{group.message}</h2>
+
+    <EmojisGrid emojis={filterGroup(emojis,group.order)}/>
+
+    {/if}
   {/each}
   
 </main>

@@ -1,18 +1,63 @@
 :root {
   font-family: Inter, sans-serif;
-  max-width: 400px;
+  background-color: white;
+}
+
+body {
+  width: 400px;
+}
+
+#app {
+  background-color: lavender;
+  max-height: 350px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  width: min-content;
+  margin-right: 2pt;
 }
 
 main {
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.group-title {
+  margin-top: 1pt;
+  margin-bottom: 1pt;
+  color: navy;
+}
+
+#emojigrid {
+  overflow: auto;
+  background-color: lightyellow;
+  height: 100%;
 }
 
 .btn {
   display: inline;
+  border: 0.5pt solid dimgray;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 3pt;
+  margin-top: 1pt;
 }
 
 .emoji {
-  color: #707;
   display: inline;
-  width: 1.5em;
+  width: 1.8em;
+  padding: 1pt;
+}
+
+.emoji:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.emoji:active {
+  background-color: rgba(0, 0, 0, 0.8);
 }
