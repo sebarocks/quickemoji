@@ -4,15 +4,15 @@
 }
 
 body {
-  width: 400px;
+  width: 420px;
 }
 
 #app {
   background-color: lavender;
-  max-height: 350px;
-
+  height: 380px;
   display: flex;
   flex-direction: row;
+  overflow-y: hidden;
 }
 
 aside {
