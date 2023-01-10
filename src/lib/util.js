@@ -28,7 +28,8 @@ export function getEmojiUrl(hexcode) {
         code = code.replace(regex, "");
     }
 
-    url = `https://twemoji.maxcdn.com/v/latest/svg/${code}.svg`
+    //url = `https://twemoji.maxcdn.com/v/latest/svg/${code}.svg`
+    url = `./svg/${code}.svg`;
 
     return url;
 }

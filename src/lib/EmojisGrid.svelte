@@ -4,7 +4,6 @@
 
     export let emojis;
 
-
 </script>
 
 <section id="emojigrid">

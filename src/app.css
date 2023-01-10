@@ -50,8 +50,10 @@ main {
 
 .emoji {
   display: inline;
-  width: 1.8em;
+  width: 2em;
   padding: 1pt;
+  border: none;
+  background-color: transparent;
 }
 
 .emoji:hover {

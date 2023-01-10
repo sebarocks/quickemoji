@@ -5,12 +5,13 @@
 
     const url = getEmojiUrl(emoji.hexcode);
 
-    function copy(emojiText) {
+    function sendtoClipboard(emojiText) {
         navigator.clipboard.writeText(emojiText)
         .then(() => console.log(`copied ${emojiText}`))
     }
 
 </script>
 
-<img class="emoji" title="{emoji.label}" alt="{emoji.emoji}" on:click ={() => copy(emoji.emoji)} src={url}>
-
+<button title="{emoji.label}" class="emoji" type="button" on:click={() => sendtoClipboard(emoji.emoji)}>
+        <img alt="{emoji.label}" src="{url}"/>
+</button>
