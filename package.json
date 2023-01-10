@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "emojibase": "^6.1.0",
-    "emojibase-data": "^7.0.1",
-    "twemoji": "^14.0.2"
+    "emojibase-data": "^7.0.1"
   }
 }
