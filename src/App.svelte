@@ -1,9 +1,11 @@
 <script>
   import { filterGroup } from './lib/util.js';
-  import { showGroup } from './lib/stores.js';
+  import { showGroup } from './lib/stores.js';  
 
   import emojis from 'emojibase-data/en/data.json';
   import messages from 'emojibase-data/en/messages.json';
+
+  import { SvelteToast } from '@zerodevx/svelte-toast'
 
   import ButtonCategory from './lib/ButtonCategory.svelte';
   import EmojisGrid from './lib/EmojisGrid.svelte';
@@ -33,4 +35,4 @@
   
 </main>
 
-
+<SvelteToast />

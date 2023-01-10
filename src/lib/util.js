@@ -33,3 +33,11 @@ export function getEmojiUrl(hexcode) {
 
     return url;
 }
+
+export const toastOptions =  {
+    theme: {
+        '--toastColor': 'mintcream',
+        '--toastBackground': 'rgba(72,187,120,0.9)',
+        '--toastBarBackground': '#2F855A'
+    }
+}
