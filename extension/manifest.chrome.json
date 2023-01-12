@@ -1,0 +1,25 @@
+{
+
+  "name": "QuickEmoji",
+  "description": "Add a panel to quickly copy emojis to clipboard",
+  "manifest_version": 3,
+  "version": "1.0",
+  "homepage_url": "https://github.com/sebarocks/QuickEmoji",
+  "icons": {
+    "48": "icons/qe-48.png"
+  },
+
+  "permissions": ["activeTab"],
+  
+  "action": {
+    "default_icon": "icons/qe-32.png",
+    "theme_icons": [{
+        "light": "icons/qe-32-light.png",
+        "dark": "icons/qe-32.png",
+        "size": 32
+    }],
+    "default_title": "QuickEmoji",
+    "default_popup": "popup/index.html"
+  }
+  
+}
