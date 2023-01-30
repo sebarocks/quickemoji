@@ -6,7 +6,7 @@ A webextension emoji picker. Built using Svelte and Twemoji.
   <img src="./docs/img/preview.jpg" alt="Preview of QuickEmoji Panel">
 </p>
 
-## Compilation
+## Building
 
 To build the extension (requires node.js, npm):
 
@@ -17,6 +17,12 @@ To build the extension (requires node.js, npm):
 Output will be in `/extension` folder
 
 ## Installation 
+
+### From Store:
+
+- [Mozilla Add-ons](https://addons.mozilla.org/es/firefox/addon/quickemoji/)
+
+- [Chrome Store](https://chrome.google.com/webstore/detail/quickemoji/fedhapifjflfeagckppmblohbnidlmmn)
 
 ### Firefox (debug mode):
 
